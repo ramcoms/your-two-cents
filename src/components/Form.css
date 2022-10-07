@@ -1,0 +1,32 @@
+form {
+    width: 95%;
+    margin: 20px auto;
+    border-bottom: 2px solid #ebe6f0;
+    padding-bottom: 20px;
+}
+
+form textarea {
+    font-family: inherit;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+}
+
+form input {
+    width: 100%;
+    font-family: inherit;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #d1d5db;
+    opacity: 1;
+  }

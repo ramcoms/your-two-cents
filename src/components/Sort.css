@@ -1,0 +1,14 @@
+.sort {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #9ca3af;
+    padding: 0 20px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sort .byDate:hover,
+.sort .byLikes:hover {
+    color: #087ea4;
+}

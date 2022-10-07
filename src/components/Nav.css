@@ -1,0 +1,20 @@
+.nav {
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+}
+
+.nav h2 {
+    cursor: pointer;
+    width: max-content;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.nav h2:hover {
+    color: #fff;
+    background-color: #087ea4;
+    border-radius: 5px;
+}

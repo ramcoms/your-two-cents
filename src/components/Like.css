@@ -1,0 +1,13 @@
+.counter button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.counter button:hover {
+    color: #f87171;
+}

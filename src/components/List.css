@@ -1,0 +1,33 @@
+.list {
+    font-size: 0.90rem;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.hack__card {
+    background-color: #fff;
+    padding: 18px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.hack__text {
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.hack__info {
+    font-size: 0.70rem;
+    color: #9ca3af;
+    display: flex;
+    align-items: baseline;
+}
+
+.info__icon {
+    margin-left: auto;
+}
+
+
+
