@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 
-// icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-
 // firebase
 import { db } from '../firebase/config';
 import { doc, updateDoc } from 'firebase/firestore';
+
+// icons
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter } from '@fortawesome/free-solid-svg-icons';
 
 // styles
 import './Like.css';
@@ -24,12 +25,18 @@ const Like = ({ likes, id }) => {
   const addLike = async () => {
     const likeRef = doc(db, 'hacks', id);
 
-    if (clicked === false) {
-      let newCount = count + 1;
-      setCount(newCount);
-      await updateDoc(likeRef, { likes: newCount });
+    let newCount = 0;
+
+    if (!clicked) {
+      newCount = count + 1;
       setClicked(true);
+    } else {
+      newCount = count - 1;
+      setClicked(false);
     }
+
+    setCount(newCount);
+    await updateDoc(likeRef, { likes: newCount });
   };
 
   return (

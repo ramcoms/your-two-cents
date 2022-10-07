@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // hooks
 import { useCollection } from './hooks/useCollection';
@@ -29,10 +30,11 @@ function App() {
       <h3 className='subtitle'>
         Your two cents on personal finance.
         <br></br>
-        Share your favorite tip!
+        Share your favorite tip and inspire others.
       </h3>
       <Form />
 
+      {/* sorting */}
       <div className='sort'>
         <span className='byLikes' onClick={() => setSortedDate(false)}>
           <FontAwesomeIcon icon={faHeart} />
@@ -45,7 +47,10 @@ function App() {
       {!sortedDate && hacks && <List hacks={hacks} />}
       {sortedDate && sortedHacks && <List hacks={sortedHacks} />}
 
+      {/* footer */}
       <Footer />
+
+      {/* back to top button */}
       <ScrollToTop
         smooth
         viewBox='0 0 320 512'
