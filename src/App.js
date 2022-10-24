@@ -1,6 +1,5 @@
 import './App.css';
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // hooks
 import { useCollection } from './hooks/useCollection';
@@ -22,7 +21,7 @@ function App() {
   const [sortedDate, setSortedDate] = useState(false);
 
   const { hacks } = useCollection('hacks');
-  const { sortedHacks } = useSort('hacks', 'timestamp');
+  const { sortedHacks } = useSort('hacks', 'timestamp', 'desc');
 
   return (
     <div className='App'>
